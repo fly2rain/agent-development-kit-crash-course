@@ -138,7 +138,7 @@ async def call_agent_async(runner, user_id, session_id, query):
             response = await process_agent_response(event)
             if response:
                 final_response_text = response
-    except Exception as e:
+    except Exception as e: 
         print(f"Error during agent call: {e}")
 
     # Display state after processing the message

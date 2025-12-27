@@ -10,7 +10,7 @@ load_dotenv()
 
 # ===== PART 1: Initialize Persistent Session Service =====
 # Using SQLite database for persistent storage
-db_url = "sqlite:///./my_agent_data.db"
+db_url = "sqlite:///./my_agent_data.db" # SQL Database
 session_service = DatabaseSessionService(db_url=db_url)
 
 
@@ -65,7 +65,7 @@ async def main_async():
     while True:
         # Get user input
         user_input = input("You: ")
-
+ 
         # Check if user wants to exit
         if user_input.lower() in ["exit", "quit"]:
             print("Ending conversation. Your data has been saved to the database.")

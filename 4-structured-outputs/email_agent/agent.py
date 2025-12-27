@@ -11,7 +11,6 @@ class EmailContent(BaseModel):
         description="The main content of the email. Should be well-formatted with proper greeting, paragraphs, and signature."
     )
 
-
 # --- Create Email Generator Agent ---
 root_agent = LlmAgent(
     name="email_agent",
